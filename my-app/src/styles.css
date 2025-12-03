@@ -1,0 +1,396 @@
+/* GLOBAL */
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  /* 🌾 Apply default background image for all pages */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://wallpaperaccess.com/full/1598226.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* smooth parallax effect */
+  background-position: center;
+  
+  color: #1b4332;
+}
+
+
+/* NAVBAR */
+.nav {
+  background: #0d4d2c;
+  padding: 18px 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #c0ffba;
+}
+.hero {
+  text-align: center;
+  padding: 160px 20px;
+  color: white;
+
+  height: 300px;
+  border-radius: 10px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: heroSlide 10s infinite linear; /* ⏩ faster and smoother */
+}
+
+/* 🔥 Horizontal Sliding Background */
+@keyframes heroSlide {
+  0% {
+    background-position: 0% 50%;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("https://thumbs.dreamstime.com/b/tractor-spraying-field-green-plants-tractor-spraying-field-green-plants-314787202.jpg");
+  }
+
+  25% {
+    background-position: 100% 50%;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("https://wallpapers.com/images/hd/agriculture-pictures-9nry5hvsmxq7rfn9.jpg");
+  }
+
+  50% {
+    background-position: 0% 50%;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("https://static.vecteezy.com/system/resources/previews/018/790/830/large_2x/farmer-in-corn-field-using-digital-tablet-for-smart-farming-innovation-technology-for-smart-farm-system-agriculture-management-concept-of-smart-farming-modern-agricultural-business-photo.jpg");
+  }
+
+  75% {
+    background-position: 100% 50%;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("https://images.pexels.com/photos/2933243/pexels-photo-2933243.jpeg?cs=srgb&dl=pexels-jk04-2933243.jpg&fm=jpg");
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("https://thumbs.dreamstime.com/b/tractor-spraying-field-green-plants-tractor-spraying-field-green-plants-314787202.jpg");
+  }
+}
+
+
+.agri-dance-text {
+  font-size: 32px;
+  margin-top: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  animation: dance 1.5s infinite ease-in-out;
+}
+
+/* Dancing animation */
+@keyframes dance {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(-3deg); }
+  50% { transform: translateY(0) rotate(3deg); }
+  75% { transform: translateY(5px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+.hero h1 {
+  font-size: 48px;     /* Bigger text */
+  font-weight: 800;    /* Extra bold */
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Glow for visibility */
+  margin-top: 20px;
+}
+
+
+
+.primary-btn {
+  background:rgb(140, 213, 134);
+  color: #0b6623;
+  padding: 14px 30px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #14532d;
+}
+
+/* FEATURE CARDS */
+/* KEY FEATURES HEADING */
+#features h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  text-shadow: 
+      0px 4px 15px rgba(0,0,0,0.7),
+      0px 0px 25px rgba(255,255,255,0.3);
+  animation: fadeDown 0.8s ease-in-out;
+}
+
+/* GRID LAYOUT */
+/* GRID LAYOUT */
+.feature-grid {
+  display: flex;
+  justify-content: center; /* centers cards horizontally */
+  gap: 40px; /* spacing between cards */
+  flex-wrap: nowrap; /* prevent wrapping to next line */
+  overflow-x: auto; /* allow horizontal scroll if screen is smaller */
+  padding-bottom: 20px; /* optional, for scroll spacing */
+}
+
+
+/* FEATURE CARD */
+.feature-card {
+  width: 300px;
+  background: linear-gradient(145deg, #ffffff, #f4fff4);
+  padding: 28px;
+  border-radius: 22px;
+  border-top: 5px solid #0fa45c;
+  box-shadow: 
+      0 8px 20px rgba(0, 0, 0, 0.18),
+      0 0 18px rgba(15,164,92,0.18);
+  transition: 0.35s ease;
+  transform: translateY(0);
+  animation: fadeUp 1s ease-in-out;
+}
+
+/* CARD HOVER EFFECT */
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 
+      0 12px 30px rgba(0, 0, 0, 0.25),
+      0 0 22px rgba(15,164,92,0.35);
+  border-top-color: #13c76d;
+}
+
+/* CARD TITLE */
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0b6a3a;
+  margin-bottom: 12px;
+}
+
+/* DESCRIPTION */
+.feature-card p {
+  font-size: 15px;
+  color: #3b3b3b;
+  line-height: 1.5;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* LOGIN FORM */
+.form-container {
+  width: 420px;
+  margin: 100px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.form-container input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1.8px solid #0b6623;
+  font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #0d4d2c;
+  color: white;
+  margin-top: 70px;
+  font-size: 15px;
+}
+
+/* PREDICTION PAGE */
+.prediction-container {
+  margin: 80px auto;
+  text-align: center;
+  padding: 40px;
+  width: 70%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.prediction-container h2 {
+  font-size: 28px;
+  color: #0b6623;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pred-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #144d23;
+  margin-top: 10px;
+}
+
+.pred-value {
+  font-size: 20px;
+  color: #0b6623;
+  font-weight: bold;
+}
+
+.chart-box {
+  width: 100%;
+  height: 300px;
+  border: 2px dashed #629f72;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+/* ABOUT SECTION */
+.about-section {
+  padding: 50px 100px;
+  text-align: center;
+  max-width: 2000px;
+  margin: auto;
+  color: #004d26; /* deep green */
+  background: rgba(241, 242, 179, 0.85); /* soft backdrop */
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.about-section h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #0b6623; /* rich green */
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #003d1c; /* dark readable green */
+}
+/* ===== About Section ===== */
+
+.about-wrapper {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1400px;
+  width: 100%;
+  background: linear-gradient(135deg, #f1f8e9, #e8f5e9);
+  border-radius: 25px;
+  padding: 40px 50px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeUp 1.2s ease-in-out;
+}
+
+/* LEFT IMAGE BOX */
+.about-image {
+  flex: 1;
+  height: 350px;
+  background-image: url("https://th.bing.com/th/id/OIP.UQ9ri0I4qY4jHzajOh9ncAHaEO?w=277&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+/* RIGHT TEXT */
+.about-text {
+  flex: 1.3;
+  color: #1e4620;
+}
+
+.about-text h2 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #0b6623;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #2d5f39;
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

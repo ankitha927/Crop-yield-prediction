@@ -1,0 +1,97 @@
+/* NAVBAR CONTAINER */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: #084d32;        /* deep agriculture green */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li a,
+.nav-links li a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #80ffb3;           /* bright agriculture green */
+  transform: translateY(-2px);
+}
+
+/* Underline animation */
+.nav-links li a {
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #80ffb3;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+/* SPECIAL LOGIN BUTTON STYLE */
+.nav-links li:last-child a {
+  padding: 10px 22px;
+  background: #ffffff;
+  color: #084d32 !important;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow Animation */
+.nav-links li:last-child a:hover {
+  color: #ffffff !important;
+  background: #0fa45c;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(15, 164, 92, 0.6);
+}
+
+
+
+.nav-links li:last-child a:hover::before {
+  left: 100%;
+}

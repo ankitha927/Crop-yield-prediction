@@ -1,0 +1,243 @@
+/* -------------------------------------------------------
+   GLOBAL DESIGN SYSTEM (Premium Agriculture Theme)
+-------------------------------------------------------- */
+:root {
+  --primary-green: #1a7f37;
+  --primary-dark: #0f5b28;
+  --accent-green: #38c172;
+  --light-green: #e9f7ec;
+  --soft-bg: #f5faf6;
+  --text-dark: #073b1a;
+  --text-light: #4d6f57;
+  --white: #ffffff;
+  --shadow-soft: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--soft-bg);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* -------------------------------------------------------
+   NAVBAR (Clean + Government UI Style)
+-------------------------------------------------------- */
+.nav {
+  background: linear-gradient(90deg, var(--primary-dark), var(--primary-green));
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  box-shadow: 0 3px 18px var(--shadow-medium);
+}
+
+.nav-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c8ffd6;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+}
+
+/* -------------------------------------------------------
+   HERO SECTION (Premium Agriculture Banner)
+-------------------------------------------------------- */
+.hero {
+  padding: 150px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1598514982350-e8d2053c2f70?auto=format&fit=crop&w=1400&q=80")
+      center/cover;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-sub {
+  font-size: 22px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.primary-btn {
+  background: var(--accent-green);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.primary-btn:hover {
+  background: #34b669;
+  transform: scale(1.06);
+}
+
+/* -------------------------------------------------------
+   SECTIONS
+-------------------------------------------------------- */
+.section {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.section p {
+  max-width: 750px;
+  margin: 12px auto;
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+/* -------------------------------------------------------
+   FEATURE CARDS
+-------------------------------------------------------- */
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: var(--white);
+  width: 260px;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #d8ecd9;
+  box-shadow: 0 6px 20px var(--shadow-soft);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.feature-card h3 {
+  color: var(--primary-green);
+}
+
+/* -------------------------------------------------------
+   FORM UI (Professional)
+-------------------------------------------------------- */
+.form-container {
+  width: 440px;
+  margin: 110px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 8px 28px var(--shadow-medium);
+  border-left: 7px solid var(--primary-green);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: var(--primary-dark);
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+  border: 1px solid #b8dcb8;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background: var(--primary-dark);
+}
+
+/* -------------------------------------------------------
+   PREDICTION PAGE DESIGN
+-------------------------------------------------------- */
+.prediction-container {
+  width: 650px;
+  margin: 120px auto;
+  padding: 45px;
+  background: var(--white);
+  border-radius: 22px;
+  box-shadow: 0 8px 30px var(--shadow-medium);
+  border-left: 8px solid var(--primary-green);
+  text-align: center;
+}
+
+.prediction-title {
+  font-size: 34px;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.highlight {
+  margin-top: 20px;
+  font-size: 26px;
+  color: var(--accent-green);
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------
+   FOOTER
+-------------------------------------------------------- */
+.footer {
+  background: var(--primary-dark);
+  color: white;
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}

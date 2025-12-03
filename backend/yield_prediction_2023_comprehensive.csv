@@ -1,0 +1,2 @@
+year,predicted_yield,actual_yield,absolute_error,percentage_error,prediction_accuracy,prediction_date,model_performance
+2023,2.88354229927063,2.94,0.056457700729370064,1.9203299567812946,98.07967004321871,2025-12-02 19:32:21,Excellent

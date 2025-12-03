@@ -1,0 +1,3 @@
+Region,Year,Crop,Rainfall (mm/day),All sky solar radiation (MJ/m^2/day),Humidity (g/kg),Temparature (C),Profile soil moisture (1),Surface soil moisture (1),Total_Area,Yield
+Udupi,2023,Rice,2722.01,19.5,15.91,26.02,0.75,0.67,40388.00000,2.94
+
