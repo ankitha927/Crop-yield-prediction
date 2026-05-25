@@ -103,6 +103,9 @@ def predict():
         "predicted_yield": predicted_value
     })
 
+@app.route("/")
+def home():
+    return jsonify({"message": "Crop Yield Prediction API Running"})
 # ---------------------------
 # START BACKEND
 # ---------------------------
